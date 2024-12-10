@@ -14,8 +14,6 @@ class RedisClient {
         this.client.on('ready', () => {
             this.connected = true;
         });
-
-        t
         this.client.on('error', (err) => {
             this.connected = false;
             console.error('Redis Client Error:', err);
