@@ -1,5 +1,6 @@
 import express from 'express'
 import AppController from '../controllers/AppController'
+import UsersController  from '../controllers/UsersController';
 
 const injectRoutes = (api) => {
     api.get('/status', AppController.getStatus);
