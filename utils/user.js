@@ -14,7 +14,7 @@ const userUtils = {
         return obj;
     },
     async getUser(query){
-        const user = await dbClient.userCollection.findOne(query);
+        const user = await dbClient.usersCollection.findOne(query);
         return user;
     },
 };
